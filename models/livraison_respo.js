@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const adminSchema = new Schema({
+const respoSchema = new Schema({
   name: {
     type: String,
     required: true
@@ -21,5 +21,5 @@ const adminSchema = new Schema({
   
 }, { timestamps: true });
 
-const admin = mongoose.model('admin', adminSchema);
-module.exports = admin;
+const respo = mongoose.model('livraison_respo', respoSchema);
+module.exports = respo;
