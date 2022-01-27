@@ -18,6 +18,9 @@ app.use(express.json());
 app.use('/api/admin', require('./routes/admin.route'));
 app.use('/api/manager', require('./routes/manager.route'));
 app.use('/api/responsableLivraison', require('./routes/livraison_respo.route'));
+app.use('/api/vehicule', require('./routes/vehicule.route'));
+app.use('/api/livraison', require('./routes/livraison.route'));
+app.use('/api/chauffeur', require('./routes/chauffeur.route'));
 
 
 
